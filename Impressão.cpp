@@ -25,9 +25,9 @@ static void acionarSolenoide() {
 }
 
 static void moverMotorXPassos(int quantidadePassos) {
-  motorX.move(quantidadePassos); // define destino relativo
+  motorX.move(quantidadePassos); 
   while (motorX.distanceToGo() != 0) {
-    motorX.run(); // avança um micro-passo por chamada, respeitando aceleração
+    motorX.run(); 
   }
 }
 
